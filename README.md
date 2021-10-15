@@ -1,6 +1,6 @@
 # Foundation
 
-![](assets/foundation_editor.png)
+![](assets/screenshot.png)
 
 ### Vue.Draggable
 

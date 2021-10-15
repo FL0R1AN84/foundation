@@ -6,7 +6,7 @@
           <v-card class="elevation-12">
             <v-toolbar dark color="var(--green)">
               <v-toolbar-title :style="{ color: 'var(--green-interactive)' }"
-                >Anmeldung</v-toolbar-title
+                >Sign In</v-toolbar-title
               >
             </v-toolbar>
             <v-card-text>
@@ -16,7 +16,7 @@
                 bold
                 :style="{ color: 'var(--green)' }"
               >
-                <h3>Falsche Zugangsdaten!</h3>
+                <h3>Incorrect login data!</h3>
               </v-alert>
               <v-text-field
                 v-model="credentials.email"

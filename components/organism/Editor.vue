@@ -7,7 +7,7 @@
       type="info"
       elevation="2"
       dismissible
-      >Ziehe ein Element hierher
+      >Drag an item here
     </v-alert>
     <v-dialog v-if="!hide" v-model="dialog" width="1250px">
       <template #activator="{ on, attrs }">

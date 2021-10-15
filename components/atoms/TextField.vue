@@ -4,7 +4,7 @@
       <v-text-field
         counter="50"
         maxlength="50"
-        label="Überschrift"
+        label="Headline"
         color="var(--lightgreen-contrast)"
         clearable
         @change="addText"
@@ -16,7 +16,7 @@
       <v-text-field
         counter="50"
         maxlength="50"
-        label="Element Überschrift"
+        label="Item Headline"
         color="var(--lightgreen-contrast)"
         clearable
         @change="addText"
@@ -28,7 +28,7 @@
     <v-text-field
       counter="50"
       maxlength="50"
-      label="Neue Seite"
+      label="New Page"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -38,7 +38,7 @@
     <v-text-field
       counter="50"
       maxlength="50"
-      label="Neuer Ordner"
+      label="New Folder"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -49,7 +49,7 @@
     <v-text-field
       counter="50"
       maxlength="50"
-      label="Text groß"
+      label="Text big"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -59,7 +59,7 @@
     <v-text-field
       counter="50"
       maxlength="50"
-      label="Text klein"
+      label="Text small"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -70,7 +70,7 @@
     <v-text-field
       counter="25"
       maxlength="25"
-      label="Text klein oben"
+      label="Text small top"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -80,7 +80,7 @@
     <v-text-field
       counter="25"
       maxlength="25"
-      label="Text groß mittte"
+      label="Text big center"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -90,7 +90,7 @@
     <v-text-field
       counter="25"
       maxlength="25"
-      label="Text klein unten"
+      label="Text small bottom"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -111,7 +111,7 @@
     <v-text-field
       counter="50"
       maxlength="50"
-      label="Überschrift"
+      label="Headline"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -123,7 +123,7 @@
       <v-text-field
         counter="50"
         maxlength="50"
-        label="Titel der Tabelle"
+        label="Table title"
         color="var(--lightgreen-contrast)"
         clearable
         @change="addText"
@@ -133,7 +133,7 @@
 
   <container v-else-if="type === 'tablerow'">
     <v-text-field
-      label="Eintrag in die Tabelle"
+      label="Entry into the table"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"
@@ -144,7 +144,7 @@
     <v-text-field
       counter="50"
       maxlength="50"
-      label="Überschrift"
+      label="Headline"
       color="var(--lightgreen-contrast)"
       clearable
       @change="addText"

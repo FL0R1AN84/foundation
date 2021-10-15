@@ -11,7 +11,7 @@
     </v-alert>
     <v-dialog v-if="!hide" v-model="dialog" width="1250px">
       <template #activator="{ on, attrs }">
-        <v-btn dark color="primary" class="my-2" v-bind="attrs" v-on="on">
+        <v-btn dark color="accent" class="my-2" v-bind="attrs" v-on="on">
           Preview
         </v-btn>
       </template>

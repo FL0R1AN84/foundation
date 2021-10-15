@@ -4,7 +4,6 @@
       v-model="image"
       show-size
       accept="image/png, image/jpeg"
-      color="var(--lightgreen-contrast)"
       prepend-icon="mdi-camera"
       label="Add image"
       @change="addImageUpload"
@@ -16,7 +15,6 @@
       v-model="video"
       show-size
       accept="video/mp4, video/m4v"
-      color="var(--lightgreen-contrast)"
       prepend-icon="mdi-video"
       label="Add video"
       @change="addVideoUpload"

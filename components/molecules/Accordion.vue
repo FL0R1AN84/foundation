@@ -38,13 +38,7 @@
         <v-icon @click="i++">mdi-plus-circle-outline</v-icon>
       </div>
       <v-container>
-        <v-btn
-          dark
-          color="var(--green-interactive)"
-          :style="{ color: 'var(--green)' }"
-          type="submit"
-          >Save</v-btn
-        >
+        <v-btn color="primary" type="submit">Save</v-btn>
       </v-container>
     </v-form>
   </v-container>

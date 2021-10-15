@@ -3,7 +3,6 @@
     <v-textarea
       clearable
       label="Description above the accordion"
-      color="var(--lightgreen-contrast)"
       @change="addText"
     ></v-textarea>
   </v-container>
@@ -12,18 +11,12 @@
     <v-textarea
       clearable
       label="Description above the slider"
-      color="var(--lightgreen-contrast)"
       @change="addText"
     ></v-textarea>
   </v-container>
 
   <v-container v-else-if="type === 'text'">
-    <v-textarea
-      clearable
-      label="Description"
-      color="var(--lightgreen-contrast)"
-      @change="addText"
-    ></v-textarea>
+    <v-textarea clearable label="Description" @change="addText"></v-textarea>
   </v-container>
 </template>
 

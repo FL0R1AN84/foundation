@@ -29,13 +29,7 @@
       </v-carousel>
       <TextField :type="'slider'" @textfield="slideTextfromTextfield" />
       <Upload :type="'image'" @image="slideImagefromUpload" />
-      <v-btn
-        dark
-        color="var(--green-interactive)"
-        :style="{ color: 'var(--green)' }"
-        type="submit"
-        >Save</v-btn
-      >
+      <v-btn color="primary" type="submit">Save</v-btn>
     </v-form>
   </v-container>
 </template>

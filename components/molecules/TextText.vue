@@ -3,13 +3,7 @@
     <v-form @submit.prevent="textToTable">
       <TextField v-model="ftext" :type="'text'" @textfield="textFromField" />
       <TextArea v-model="atext" :type="'text'" @textarea="textFromArea" />
-      <v-btn
-        dark
-        color="var(--green-interactive)"
-        :style="{ color: 'var(--green)' }"
-        type="submit"
-        >Save</v-btn
-      >
+      <v-btn color="primary" type="submit">Save</v-btn>
     </v-form>
   </v-container>
 

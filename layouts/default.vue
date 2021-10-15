@@ -3,7 +3,7 @@
     <v-banner color="var(--green)">
       <nuxt-link to="/">
         <v-toolbar-title :style="{ color: 'white' }"
-          >¯\_(ツ)_/¯ Your Editor</v-toolbar-title
+          >¯\_(ツ)_/¯ Foundation</v-toolbar-title
         >
       </nuxt-link>
     </v-banner>

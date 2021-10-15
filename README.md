@@ -1,6 +1,6 @@
 # Foundation
 
-![](assets/20211012_120454_foundation_editor.png)
+![](assets/foundation_editor.png)
 
 ### Vue.Draggable
 

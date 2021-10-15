@@ -32,7 +32,7 @@ export default class TextText extends Vue {
   async querToTable() {
     const directus = new Directus(this.$config.baseURL);
     this.table = await directus
-      .items('querverweis')
+      .items('Example')
       .createOne([
         { textarea: this.platzhalter1, textfield: this.platzhalter2 },
       ]);

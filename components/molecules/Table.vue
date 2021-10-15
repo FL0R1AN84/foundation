@@ -123,7 +123,7 @@ import { Directus } from '@directus/sdk';
 @Component({
   components: {},
 })
-export default class Tabelle extends Vue {
+export default class Table extends Vue {
   @Prop({ default: 'default' })
   type!: string;
 

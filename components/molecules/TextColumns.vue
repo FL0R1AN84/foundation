@@ -21,7 +21,7 @@ import { Directus } from '@directus/sdk';
 @Component({
   components: {},
 })
-export default class TextSpalten extends Vue {
+export default class TextColumns extends Vue {
   table: any | null = null;
   atext: any;
   ftext: any;

@@ -22,17 +22,17 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 import draggable from 'vuedraggable';
-import CardSlider from '~/components/molecules/CardSlider.vue';
 import Accordion from '~/components/molecules/Accordion.vue';
+import CardSlider from '~/components/molecules/CardSlider.vue';
+import ClickModul from '~/components/molecules/ClickModul.vue';
+import Example from '~/components/molecules/Example.vue';
 import Header from '~/components/molecules/Header.vue';
-import KlickModul from '~/components/molecules/KlickModul.vue';
-import Querverweis from '~/components/molecules/Querverweis.vue';
+import Separator from '~/components/molecules/Separator.vue';
 import Slider from '~/components/molecules/Slider.vue';
-import Tabelle from '~/components/molecules/Tabelle.vue';
+import Table from '~/components/molecules/Table.vue';
+import TextColumns from '~/components/molecules/TextColumns.vue';
+import TextImage from '~/components/molecules/TextImage.vue';
 import TextText from '~/components/molecules/TextText.vue';
-import TextBild from '~/components/molecules/TextBild.vue';
-import TextSpalten from '~/components/molecules/TextSpalten.vue';
-import Trennlinie from '~/components/molecules/Trennlinie.vue';
 import Video from '~/components/molecules/Video.vue';
 
 @Component({
@@ -41,14 +41,14 @@ import Video from '~/components/molecules/Video.vue';
     Accordion,
     CardSlider,
     Header,
-    KlickModul,
-    Querverweis,
+    ClickModul,
+    Example,
     Slider,
-    Tabelle,
+    Table,
     TextText,
-    TextBild,
-    TextSpalten,
-    Trennlinie,
+    TextImage,
+    TextColumns,
+    Separator,
     Video,
   },
 })
@@ -70,14 +70,14 @@ export default class Elements extends Vue {
       title: 'Header',
     },
     {
-      name: KlickModul,
+      name: ClickModul,
       icon: 'mdi-cursor-default-click-outline',
-      title: 'KlickModul',
+      title: 'ClickModul',
     },
     {
-      name: Querverweis,
+      name: Example,
       icon: 'mdi-link-plus',
-      title: 'Querverweis',
+      title: 'Example',
     },
     {
       name: Slider,
@@ -85,9 +85,9 @@ export default class Elements extends Vue {
       title: 'Slider',
     },
     {
-      name: Tabelle,
+      name: Table,
       icon: 'mdi-table',
-      title: 'Tabelle',
+      title: 'Table',
     },
     {
       name: TextText,
@@ -95,19 +95,19 @@ export default class Elements extends Vue {
       title: 'Text',
     },
     {
-      name: TextBild,
+      name: TextImage,
       icon: 'mdi-text-account',
-      title: 'Text mit Bild',
+      title: 'Text with image',
     },
     {
-      name: TextSpalten,
+      name: TextColumns,
       icon: 'mdi-text-short',
-      title: 'Text mit Spalten',
+      title: 'Text with columns',
     },
     {
-      name: Trennlinie,
+      name: Separator,
       icon: 'mdi-minus',
-      title: 'Trennlinie',
+      title: 'Separator',
     },
     {
       name: Video,

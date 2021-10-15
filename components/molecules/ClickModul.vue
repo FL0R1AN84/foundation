@@ -57,7 +57,7 @@
                 elvide
               "
               @click="elquer = !elquer"
-              >Querverweis</v-btn
+              >Example</v-btn
             >
             <v-btn
               :disabled="
@@ -109,7 +109,7 @@
                 elvide
               "
               @click="eltabl = !eltabl"
-              >Tabelle</v-btn
+              >Table</v-btn
             >
             <v-btn
               :disabled="
@@ -126,11 +126,11 @@
             >
             <Akkordeon v-if="elacco" :type="'expansion'" />
             <Header v-if="elhead" :type="'expansion'" />
-            <Querverweis v-if="elquer" :type="'expansion'" />
+            <Example v-if="elquer" :type="'expansion'" />
             <Slider v-if="elslid" :type="'expansion'" />
             <TextText v-if="eltext" :type="'expansion'" />
-            <TextBild v-if="eltxtimg" :type="'expansion'" />
-            <Tabelle v-if="eltabl" :type="'expansion'" />
+            <TextImage v-if="eltxtimg" :type="'expansion'" />
+            <Table v-if="eltabl" :type="'expansion'" />
             <Video v-if="elvide" :type="'expansion'" />
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -159,7 +159,7 @@ import { Directus } from '@directus/sdk';
 @Component({
   components: {},
 })
-export default class KlickModul extends Vue {
+export default class ClickModul extends Vue {
   table: any | null = null;
   i = 1;
   atext: any;

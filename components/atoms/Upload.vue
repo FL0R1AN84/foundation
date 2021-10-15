@@ -6,7 +6,7 @@
       accept="image/png, image/jpeg"
       color="var(--lightgreen-contrast)"
       prepend-icon="mdi-camera"
-      label="Bild hinzufügen"
+      label="Add image"
       @change="addImageUpload"
     ></v-file-input>
   </v-container>
@@ -18,7 +18,7 @@
       accept="video/mp4, video/m4v"
       color="var(--lightgreen-contrast)"
       prepend-icon="mdi-video"
-      label="Video hinzufügen"
+      label="Add video"
       @change="addVideoUpload"
     ></v-file-input>
   </v-container>

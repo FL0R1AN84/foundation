@@ -4,14 +4,14 @@
       <v-dialog v-model="dialog" width="600px">
         <template #activator="{ on, attrs }">
           <v-btn class="primary--text my-2" v-bind="attrs" v-on="on">
-            Siegel hinzufügen
+            Add seal
           </v-btn>
         </template>
         <v-card>
           <v-btn icon @click="dialog = false">
             <v-icon>mdi-close-circle</v-icon>
           </v-btn>
-          <Siegel />
+          <Seal />
         </v-card>
       </v-dialog>
       <v-card v-for="header in table" :key="header.id">

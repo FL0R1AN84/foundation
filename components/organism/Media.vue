@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pastellgruen">
+  <v-container class="sidebar">
     <Upload />
     <v-treeview
       v-model="tree"

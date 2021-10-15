@@ -7,16 +7,16 @@
       class="mx-auto pa-5"
       height="135"
       width="135"
-      color="var(--green-interactive)"
+      color="info"
       :style="{ 'text-align': 'center' }"
     >
-      <h4 class="primary--text">
+      <h4>
         {{ text.st_textfield }}
       </h4>
-      <h2 class="primary--text">
+      <h2>
         {{ text.sc_textfield }}
       </h2>
-      <h4 class="primary--text">
+      <h4>
         {{ text.sb_textfield }}
       </h4>
     </v-sheet>

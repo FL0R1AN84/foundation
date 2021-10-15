@@ -1,47 +1,7 @@
 :root {
-  --green: #005E3F	;
-  --lightgreen: #50EB5D;
-  --lightgreen-contrast: #18AB42;
-  --green-interactive: #91F54A;
-  --akzentgelb: #FFF133;
-  --akzentblau: #83EAF2;
-  --pastellblau: #E8F4F2;
-  --pastellgruen: #EEFAEA;
-  --sand: #F8F5E3;
-  --tiefgruen: #004730;
+  --accent: #82b1ff;
 }
 
-.green {
-    background: var(--green);
-    color: var(--green);
-}
-
-.lightgreen {
-  background: var(--lightgreen);
-  color: var(--lightgreen);
-}
-
-.lightgreen-contrast {
-  background: var(--lightgreen-contrast);
-  color: var(--lightgreen-contrast);
-}
-
-.green-interactive {
-  background: var(--green-interactive);
-  color: var(--green-interactive);
-}
-
-.pastellblau {
-  background: var(--pastellblau);
-  color: var(--pastellblau);
-}
-
-.pastellgruen {
-  background: var(--pastellgruen);
-  color: var(--pastellgruen);
-}
-
-.sand {
-  background: var(--sand);
-  color: var(--sand);
+.sidebar  {
+  background-color: #03DAC6;
 }

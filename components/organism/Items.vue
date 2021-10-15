@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pastellgruen">
+  <v-container class="sidebar">
     <draggable
       v-model="elementsArray"
       class="d-inline-flex flex-wrap justify-space-around dragArea list-group"
@@ -127,12 +127,12 @@ export default class Elements extends Vue {
   max-width: 150px;
 
   &:active {
-    background: var(--green);
+    background: var(--accent);
     box-shadow: none;
   }
 }
 
 .ghost {
-  background: var(--akzentgelb);
+  background: var(--accent);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pastellgruen">
+  <v-container class="sidebar">
     <NewDocuments />
 
     <v-treeview

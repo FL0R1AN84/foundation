@@ -88,6 +88,6 @@ export default class Editor extends Vue {
 }
 
 .ghost {
-  background: var(--akzentgelb);
+  background: var(--accent);
 }
 </style>

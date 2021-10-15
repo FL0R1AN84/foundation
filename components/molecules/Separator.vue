@@ -4,7 +4,7 @@
 
 <style scoped>
 hr {
-  border: 6px solid var(--green);
+  border: 6px solid;
   border-radius: 4px;
   width: 100%;
 }

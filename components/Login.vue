@@ -4,31 +4,22 @@
       <v-flex xs12 sm8 md4>
         <v-form @submit.prevent="submitLogin">
           <v-card class="elevation-12">
-            <v-toolbar dark color="var(--green)">
-              <v-toolbar-title :style="{ color: 'var(--green-interactive)' }"
-                >Sign In</v-toolbar-title
-              >
+            <v-toolbar dark color="accent">
+              <v-toolbar-title>Sign In</v-toolbar-title>
             </v-toolbar>
             <v-card-text>
-              <v-alert
-                v-if="error === 'INVALID_CREDENTIALS'"
-                type="error"
-                bold
-                :style="{ color: 'var(--green)' }"
-              >
+              <v-alert v-if="error === 'INVALID_CREDENTIALS'" type="error" bold>
                 <h3>Incorrect login data!</h3>
               </v-alert>
               <v-text-field
                 v-model="credentials.email"
                 prepend-icon="mdi-shield-account"
-                color="var(--green)"
                 label="E-Mail"
                 type="email"
               ></v-text-field>
               <v-text-field
                 v-model="credentials.password"
                 prepend-icon="mdi-lock"
-                color="var(--green)"
                 name="password"
                 label="Passwort"
                 type="password"
@@ -36,13 +27,7 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn
-                dark
-                color="var(--green-interactive)"
-                :style="{ color: 'var(--green)' }"
-                type="submit"
-                >Login</v-btn
-              >
+              <v-btn dark color="primary" type="submit">Login</v-btn>
             </v-card-actions>
           </v-card>
         </v-form>

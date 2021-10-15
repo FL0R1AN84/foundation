@@ -53,9 +53,3 @@ export default class extends Vue {
   tabs = null;
 }
 </script>
-
-<style>
-.v-tabs-slider {
-  color: var(--pastellgruen);
-}
-</style>

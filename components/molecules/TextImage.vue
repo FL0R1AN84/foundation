@@ -67,7 +67,7 @@
         </v-img>
       </v-card>
       <v-switch v-if="table != null" v-model="imgPos" value="end">
-        <template #label>Bildposition ändern</template>
+        <template #label>Change image position</template>
       </v-switch>
       <TextField v-model="ftext" :type="'text'" @textfield="textFromField" />
       <TextArea v-model="atext" :type="'text'" @textarea="textFromArea" />

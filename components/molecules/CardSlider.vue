@@ -3,7 +3,7 @@
     <v-slide-group v-model="model" active-class="white" show-arrows>
       <v-slide-item v-for="n in 4" :key="n" v-slot="{ active, toggle }">
         <v-card
-          :color="active ? undefined : 'var(--pastellblau)'"
+          :color="active ? undefined : 'accent'"
           class="ma-4"
           height="300"
           width="300"

@@ -18,7 +18,7 @@
           </template>
           <template v-slot:default="dialog">
             <v-card>
-              <v-toolbar color="primary" dark>{{ item.title }}</v-toolbar>
+              <v-toolbar color="accent" dark>{{ item.title }}</v-toolbar>
               <v-card-text>
                 <div class="text-h2 pa-12">
                   <v-img

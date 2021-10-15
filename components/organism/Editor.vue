@@ -1,12 +1,6 @@
 <template>
   <v-container>
-    <v-alert
-      v-model="hide"
-      border="top"
-      color="success"
-      type="info"
-      elevation="2"
-      dismissible
+    <v-alert v-model="hide" border="top" type="info" elevation="2" dismissible
       >Drag an item here
     </v-alert>
     <v-dialog v-if="!hide" v-model="dialog" width="1250px">

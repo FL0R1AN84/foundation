@@ -23,7 +23,7 @@
 import { Vue, Component } from 'nuxt-property-decorator';
 import draggable from 'vuedraggable';
 import CardSlider from '~/components/molecules/CardSlider.vue';
-import Akkordeon from '~/components/molecules/Akkordeon.vue';
+import Accordion from '~/components/molecules/Accordion.vue';
 import Header from '~/components/molecules/Header.vue';
 import KlickModul from '~/components/molecules/KlickModul.vue';
 import Querverweis from '~/components/molecules/Querverweis.vue';
@@ -38,7 +38,7 @@ import Video from '~/components/molecules/Video.vue';
 @Component({
   components: {
     draggable,
-    Akkordeon,
+    Accordion,
     CardSlider,
     Header,
     KlickModul,
@@ -55,9 +55,9 @@ import Video from '~/components/molecules/Video.vue';
 export default class Elements extends Vue {
   elementsArray = [
     {
-      name: Akkordeon,
+      name: Accordion,
       icon: 'mdi-format-list-checkbox',
-      title: 'Akkordeon',
+      title: 'Accordion',
     },
     {
       name: CardSlider,

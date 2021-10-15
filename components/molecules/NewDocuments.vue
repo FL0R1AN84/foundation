@@ -16,7 +16,7 @@
           color="var(--green-interactive)"
           :style="{ color: 'var(--green)' }"
           type="submit"
-          >Speichern</v-btn
+          >Save</v-btn
         >
       </v-form>
     </v-container>
@@ -33,7 +33,7 @@
           color="var(--green-interactive)"
           :style="{ color: 'var(--green)' }"
           type="submit"
-          >Speichern</v-btn
+          >Save</v-btn
         >
       </v-form>
     </v-container>

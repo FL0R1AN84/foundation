@@ -12,21 +12,21 @@
         <v-toolbar color="primary" dark>
           <template #extension>
             <v-tabs v-model="tabs" centered>
-              <v-tab>Elemente</v-tab>
-              <v-tab>Dokumente</v-tab>
-              <v-tab>Assets</v-tab>
+              <v-tab>Items</v-tab>
+              <v-tab>Pages</v-tab>
+              <v-tab>Media</v-tab>
             </v-tabs>
           </template>
         </v-toolbar>
 
         <v-tabs-items v-model="tabs">
           <v-tab-item>
-            <Elements />
+            <Items />
           </v-tab-item>
           <v-tab-item>
-            <Documents />
+            <Pages />
           </v-tab-item>
-          <v-tab-item> <Assets /> </v-tab-item>
+          <v-tab-item> <Media /> </v-tab-item>
         </v-tabs-items>
       </v-card>
     </v-col>
@@ -35,16 +35,16 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
-import Assets from '~/components/organism/Assets.vue';
-import Documents from '~/components/organism/Documents.vue';
-import Elements from '~/components/organism/Elements.vue';
+import Media from '~/components/organism/Media.vue';
+import Pages from '~/components/organism/Pages.vue';
+import Items from '~/components/organism/Items.vue';
 import Editor from '~/components/organism/Editor.vue';
 
 @Component({
   components: {
-    Assets,
-    Documents,
-    Elements,
+    Media,
+    Pages,
+    Items,
     Editor,
   },
   middleware: ['auth'],

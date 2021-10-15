@@ -10,7 +10,7 @@
       <v-expansion-panels focusable>
         <v-expansion-panel v-for="(item, i) in i" :key="i">
           <v-expansion-panel-header>
-            <div>{{ i + 1 }}. Akkordeon Element</div>
+            <div>{{ i + 1 }}. Accordion item</div>
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             <TextField
@@ -22,14 +22,14 @@
               >Text</v-btn
             >
             <v-btn :disabled="eltext || eltable" @click="eltextimg = !eltextimg"
-              >Text mit Bild</v-btn
+              >Text with Image</v-btn
             >
             <v-btn :disabled="eltext || eltextimg" @click="eltable = !eltable"
-              >Tabelle</v-btn
+              >Table</v-btn
             >
             <TextText v-if="eltext" :type="'expansion'" />
-            <TextBild v-if="eltextimg" :type="'expansion'" />
-            <Tabelle v-if="eltable" :type="'expansion'" />
+            <TextImage v-if="eltextimg" :type="'expansion'" />
+            <Table v-if="eltable" :type="'expansion'" />
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
@@ -43,7 +43,7 @@
           color="var(--green-interactive)"
           :style="{ color: 'var(--green)' }"
           type="submit"
-          >Speichern</v-btn
+          >Save</v-btn
         >
       </v-container>
     </v-form>

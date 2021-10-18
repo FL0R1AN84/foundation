@@ -1,19 +1,15 @@
 <template>
   <v-container class="sidebar">
     <draggable
-      v-model="elementsArray"
+      v-model="itemsArray"
       class="d-inline-flex flex-wrap justify-space-around dragArea list-group"
       ghost-class="ghost"
-      :group="{ name: 'elements', pull: 'clone', put: false }"
+      :group="{ name: 'items', pull: 'clone', put: false }"
       :sort="false"
     >
-      <v-card
-        v-for="element in elementsArray"
-        :key="element.id"
-        class="ma-2 py-4 element"
-      >
-        <v-icon>{{ element.icon }}</v-icon>
-        <v-card-text> {{ element.title }}</v-card-text>
+      <v-card v-for="item in itemsArray" :key="item.id" class="ma-2 py-4 item">
+        <v-icon>{{ item.icon }}</v-icon>
+        <v-card-text> {{ item.title }}</v-card-text>
       </v-card>
     </draggable>
   </v-container>
@@ -52,8 +48,8 @@ import Video from '~/components/molecules/Video.vue';
     Video,
   },
 })
-export default class Elements extends Vue {
-  elementsArray = [
+export default class Items extends Vue {
+  itemsArray = [
     {
       name: Accordion,
       icon: 'mdi-format-list-checkbox',
@@ -119,7 +115,7 @@ export default class Elements extends Vue {
 </script>
 
 <style scoped lang="scss">
-.element {
+.item {
   text-align: center;
   height: 100px;
   max-height: 100px;

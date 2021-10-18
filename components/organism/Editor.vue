@@ -26,7 +26,7 @@
       v-model="previewArray"
       class="dragArea list-group"
       ghost-class="ghost"
-      group="elements"
+      group="items"
       :style="{ 'min-height': '400px' }"
       @change="addUUID"
     >

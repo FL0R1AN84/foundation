@@ -35,7 +35,7 @@
           <v-card-actions class="justify-end">
             <v-icon @click="removeAt(element.id)"> mdi-close-circle </v-icon>
           </v-card-actions>
-          <v-banner v-if="element.title === 'Trennlinie'"> </v-banner>
+          <v-banner v-if="element.title === 'Separator'"> </v-banner>
           <v-banner v-else dark rounded color="accent" elevation="1">
             {{ element.title }}
           </v-banner>

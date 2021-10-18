@@ -7,7 +7,7 @@
         </v-card>
       </v-container>
     </v-col>
-    <v-col md="3" outlined tile>
+    
       <v-card>
         <v-toolbar color="primary" dark>
           <template #extension>
@@ -53,3 +53,11 @@ export default class extends Vue {
   tabs = null;
 }
 </script>
+
+<style scoped>
+.fixed {
+  position: fixed;
+  right: 0;
+  width: 25%;
+}
+</style>

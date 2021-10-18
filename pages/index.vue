@@ -1,13 +1,13 @@
 <template>
   <v-row class="pa-4">
-    <v-col md="9" class="" outlined tile>
+    <v-col md="9" outlined tile>
       <v-container>
         <v-card>
           <Editor />
         </v-card>
       </v-container>
     </v-col>
-    
+    <v-col class="fixed" md="3" outlined tile>
       <v-card>
         <v-toolbar color="primary" dark>
           <template #extension>

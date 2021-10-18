@@ -150,9 +150,7 @@
 import { Vue, Component } from 'nuxt-property-decorator';
 import { Directus } from '@directus/sdk';
 
-@Component({
-  components: {},
-})
+@Component
 export default class ClickModul extends Vue {
   table: any | null = null;
   i = 1;

@@ -1,18 +1,24 @@
 <template>
   <v-container>
-    <v-alert v-model="hide" border="top" type="info" elevation="2" dismissible
+    <v-alert
+      v-model="hide"
+      border="top"
+      color="info"
+      type="info"
+      elevation="2"
+      dismissible
       >Drag an item here
     </v-alert>
     <v-dialog v-if="!hide" v-model="dialog" width="1250px">
       <template #activator="{ on, attrs }">
-        <v-btn dark color="accent" class="my-2" v-bind="attrs" v-on="on">
+        <v-btn dark color="primary" class="my-2" v-bind="attrs" v-on="on">
           Preview
         </v-btn>
       </template>
       <v-card>
-        <v-btn icon @click="dialog = false">
-          <v-icon>mdi-close-circle</v-icon>
-        </v-btn>
+        <v-card-actions class="justify-end">
+          <v-icon @click="dialog = false"> mdi-close-circle </v-icon>
+        </v-card-actions>
         <Preview />
       </v-card>
     </v-dialog>
@@ -25,13 +31,16 @@
       @change="addUUID"
     >
       <template v-for="element in previewArray">
-        <v-card
-          :key="element.id"
-          class="ma-2 pa-2 element d-flex justify-space-between"
-        >
+        <v-card :key="element.id" class="ma-2 pa-2">
+          <v-card-actions class="justify-end">
+            <v-icon @click="removeAt(element.id)"> mdi-close-circle </v-icon>
+          </v-card-actions>
+          <v-banner v-if="element.title === 'Trennlinie'"> </v-banner>
+          <v-banner v-else dark rounded color="accent" elevation="1">
+            {{ element.title }}
+          </v-banner>
           <component :is="element.name" :key="element.id" :element="element">
           </component>
-          <v-icon @click="removeAt(element.id)"> mdi-close-circle </v-icon>
         </v-card>
       </template>
     </draggable>
@@ -83,10 +92,6 @@ export default class Editor extends Vue {
 </script>
 
 <style scoped lang="scss">
-.element {
-  align-items: center;
-}
-
 .ghost {
   background: var(--accent);
 }

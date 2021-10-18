@@ -22,9 +22,7 @@
 import { Vue, Component } from 'nuxt-property-decorator';
 import { Directus } from '@directus/sdk';
 
-@Component({
-  components: {},
-})
+@Component
 export default class Video extends Vue {
   table: any | null = null;
   atext: any;

@@ -23,9 +23,7 @@
 <script lang="ts">
 import { Vue, Component, Emit, Prop } from 'nuxt-property-decorator';
 
-@Component({
-  components: {},
-})
+@Component
 export default class TextArea extends Vue {
   @Prop({ default: 'accordion' })
   type!: string;

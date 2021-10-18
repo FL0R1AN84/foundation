@@ -19,9 +19,7 @@
 import { Vue, Component, Prop } from 'nuxt-property-decorator';
 import { Directus } from '@directus/sdk';
 
-@Component({
-  components: {},
-})
+@Component
 export default class TextText extends Vue {
   @Prop({ default: 'default' })
   type!: string;

@@ -8,9 +8,13 @@
           </v-btn>
         </template>
         <v-card>
-          <v-btn icon @click="dialog = false">
-            <v-icon>mdi-close-circle</v-icon>
-          </v-btn>
+          <v-card-actions class="justify-end">
+            <v-btn icon @click="dialog = false">
+              <v-icon>mdi-close-circle</v-icon>
+            </v-btn>
+          </v-card-actions>
+          <Siegel v-model="dialog" />
+
           <Seal />
         </v-card>
       </v-dialog>
@@ -47,9 +51,7 @@
 import { Vue, Component } from 'nuxt-property-decorator';
 import { Directus } from '@directus/sdk';
 
-@Component({
-  components: {},
-})
+@Component
 export default class Header extends Vue {
   table: any | null = null;
   btext: any;

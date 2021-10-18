@@ -32,9 +32,7 @@
 import { Vue, Component, Prop } from 'nuxt-property-decorator';
 import { Directus } from '@directus/sdk';
 
-@Component({
-  components: {},
-})
+@Component
 export default class NewDocuments extends Vue {
   table: any | null = null;
   title: any;

@@ -24,9 +24,7 @@ import Vue from 'vue';
 import { Component } from 'nuxt-property-decorator';
 import { Directus } from '@directus/sdk';
 
-@Component({
-  components: {},
-})
+@Component
 export default class Documents extends Vue {
   initiallyOpen = ['public'];
   table: any;

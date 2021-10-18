@@ -39,9 +39,7 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 
-@Component({
-  components: {},
-})
+@Component
 export default class Login extends Vue {
   error: string | null = null;
   $api: any;

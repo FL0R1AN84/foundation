@@ -48,9 +48,7 @@
 import { Vue, Component } from 'nuxt-property-decorator';
 import { Directus } from '@directus/sdk';
 
-@Component({
-  components: {},
-})
+@Component
 export default class Akkordeon extends Vue {
   table: any | null = null;
   i = 1;

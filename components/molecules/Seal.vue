@@ -45,9 +45,7 @@
 import { Vue, Component } from 'nuxt-property-decorator';
 import { Directus } from '@directus/sdk';
 
-@Component({
-  components: {},
-})
+@Component
 export default class Text extends Vue {
   table: any | null = null;
   sttext: any;

@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-btn :disabled="folder" @click="document = !document">Neue Seite</v-btn>
-    <v-btn :disabled="document" @click="folder = !folder">Neuer Ordner</v-btn>
+    <v-btn :disabled="folder" @click="document = !document">New Page</v-btn>
+    <v-btn :disabled="document" @click="folder = !folder">New Folder</v-btn>
 
     <v-container v-if="document" :type="documents">
       <v-form @submit.prevent="docToTable">

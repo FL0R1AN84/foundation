@@ -1,5 +1,11 @@
 <template>
   <v-container>
+    <v-progress-linear
+      :active="hasSaved"
+      :indeterminate="hasSaved"
+      absolute
+      bottom
+    ></v-progress-linear>
     <v-sheet
       v-for="text in table"
       :key="text.id"
@@ -37,6 +43,9 @@
         @textfield="textFromSealB"
       />
       <v-btn color="primary" type="submit">Save</v-btn>
+      <v-snackbar v-model="hasSaved" :timeout="2000" rounded absolute top>
+        <div class="text-center">Wurde gespeichert</div>
+      </v-snackbar>
     </v-form>
   </v-container>
 </template>
@@ -48,6 +57,7 @@ import { Directus } from '@directus/sdk';
 @Component
 export default class Text extends Vue {
   table: any | null = null;
+  hasSaved = false;
   sttext: any;
   sctext: any;
   sbtext: any;
@@ -68,6 +78,7 @@ export default class Text extends Vue {
   }
 
   async textToSeal() {
+    this.hasSaved = true;
     const directus = new Directus(this.$config.baseURL);
     this.table = await directus.items('seal').createOne([
       {

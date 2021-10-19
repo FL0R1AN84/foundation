@@ -1,5 +1,11 @@
 <template>
   <v-container>
+    <v-progress-linear
+      :active="hasSaved"
+      :indeterminate="hasSaved"
+      absolute
+      bottom
+    ></v-progress-linear>
     <v-form @submit.prevent="accordiontToTable">
       <TextField
         v-model="ftext"
@@ -39,6 +45,9 @@
       </div>
       <v-container>
         <v-btn color="primary" type="submit">Save</v-btn>
+        <v-snackbar v-model="hasSaved" :timeout="2000" rounded absolute top>
+          <div class="text-center">Wurde gespeichert</div>
+        </v-snackbar>
       </v-container>
     </v-form>
   </v-container>
@@ -51,6 +60,7 @@ import { Directus } from '@directus/sdk';
 @Component
 export default class Akkordeon extends Vue {
   table: any | null = null;
+  hasSaved = false;
   i = 1;
   atext: any;
   ftext: any;
@@ -75,6 +85,7 @@ export default class Akkordeon extends Vue {
   }
 
   async accordiontToTable() {
+    this.hasSaved = true;
     const directus = new Directus(this.$config.baseURL);
     this.table = await directus.items('accordion').createOne([
       {

@@ -10,6 +10,8 @@ https://github.com/SortableJS/Vue.Draggable
 
 https://github.com/directus/directus
 
+**More information about SQL database structure and dump to create tables and columns:** https://github.com/GammaGate/foundation/issues/1
+
 ## Build Setup
 
 ```bash
